@@ -12,8 +12,8 @@ class Appointment extends Model
     {
         return $this->belongsTo(Service::class,'service_id');
     }
-    public function user()
+    public function customer()
     {
-        return $this->belongsTo(User::class,'worker_id');
+        return $this->belongsTo(Customer::class);
     }
 }

@@ -15,13 +15,13 @@ return new class extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->integer('user_id');
             $table->integer('service_id');
-            $table->integer('worker_id');
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('address');
             $table->date('date');
             $table->time('time');
-            $table->float('price');
-            $table->string('payment');
             $table->string('IP',20);
             $table->string('note',20)->nullable();
             $table->string('status',30)->default('New');

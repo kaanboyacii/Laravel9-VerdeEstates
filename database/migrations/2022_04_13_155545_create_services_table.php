@@ -17,13 +17,12 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->nullable();
             $table->string('title',150);
-            $table->string('keywords')->nullable();
-            $table->string('description')->nullable();
-            $table->string('detail',500)->change()->nullable();
+            $table->float('address')->nullable();
             $table->float('price')->nullable();
+            $table->string('detail',500)->change()->nullable();
             $table->string('image',100)->nullable();
             $table->string('status',6)->nullable()->default('False');
-            $table->timestamps();// create cerated_At , updated_at at fields
+            $table->timestamps();
         });
     }
 
