@@ -1,4 +1,8 @@
+Home Page Video:
+https://www.youtube.com/watch?v=RSGIwVCRz3Y
 
+Admin Page video:
+https://www.youtube.com/watch?v=chewlb0RNzM
 
 1-Setup (install/create) Database and PHP server.
 
