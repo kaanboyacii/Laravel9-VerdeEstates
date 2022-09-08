@@ -42,7 +42,7 @@ Route::post('/storeappointment', [HomeController::class, 'storeappointment'])->n
 
 
 //ADMIN PANEL ROUTES
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminHomeController::class, 'index'])->name('index');
     //ADMIN GENERAL ROUTES
     Route::get('/setting', [AdminHomeController::class, 'setting'])->name('setting');
