@@ -37,12 +37,17 @@ class HomeController extends Controller
         $data->company = $request->input('company');
         $data->adress = $request->input('adress');
         $data->phone = $request->input('phone');
+        $data->worktime = $request->input('worktime');
         $data->fax = $request->input('fax');
         $data->email = $request->input('email');
         $data->smtpserver = $request->input('smtpserver');
         $data->smtpemail = $request->input('smtpemail');
         $data->smtppassword = $request->input('smtppassword');
         $data->smtpport = $request->input('smtpport');
+        $data->facebook = $request->input('facebook');
+        $data->instagram = $request->input('instagram');
+        $data->twitter = $request->input('twitter');
+        $data->youtube = $request->input('youtube');
         $data->aboutus = $request->input('aboutus');
         $data->contact = $request->input('contact');
         $data->references = $request->input('references');

@@ -41,22 +41,6 @@ class HomeController extends Controller
             'setting'=>$setting
         ]);
     }
-    public function references()
-    {
-        $setting = Setting::first();
-        return view('home.references', [
-            'setting'=>$setting
-        ]);
-    }
-    public function faq()
-    {
-        $setting = Setting::first();
-        $datalist = Faq::all();
-        return view('home.faq', [
-            'setting'=>$setting,
-            'datalist'=>$datalist
-        ]);
-    }
     public function storeappointment(Request $request)
     {
         $data = New Appointment();
