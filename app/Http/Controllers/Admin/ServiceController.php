@@ -31,10 +31,7 @@ class serviceController extends Controller
      */
     public function create()
     {
-        $data=Category::all();
-        return view('admin.service.create',[
-            'data'=> $data
-        ]);
+        return view('admin.service.create');
     }
 
     /**
@@ -46,7 +43,6 @@ class serviceController extends Controller
     public function store(Request $request)
     {
         $data=new service();
-        $data->category_id = $request->category_id;
         $data->user_id = $request->user_id;
         $data->title = $request->title;
         $data->keywords = $request->keywords;
@@ -84,10 +80,8 @@ class serviceController extends Controller
     public function edit(service $service,$id)
     {
         $data=service::find($id);
-        $datalist=Category::all();
         return view('admin.service.edit',[
             'data'=> $data,
-            'datalist' => $datalist
         ]);
 
     }

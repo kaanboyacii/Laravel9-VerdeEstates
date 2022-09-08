@@ -10,7 +10,11 @@ use App\Models\Category;
 class Service extends Model
 {
     use HasFactory;
-    #many to one
+    protected $fillable = [
+        'title',
+        'address',
+        'price',
+    ];
     public function appointment()
     {
         return $this->hasMany(Appointment::class);
