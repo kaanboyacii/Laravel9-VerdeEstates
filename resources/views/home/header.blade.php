@@ -8,9 +8,9 @@
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
             >
               <li class="active"><a href="{{route('home')}}">Home</a></li>
-              <li><a href="services.html">Properties</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="{{route('services')}}">Properties</a></li>
+              <li><a href="{{route('about')}}">About</a></li>
+              <li><a href="{{route('contact')}}">Contact Us</a></li>
             </ul>
 
             <a
