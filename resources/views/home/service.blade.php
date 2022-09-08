@@ -87,20 +87,6 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Ratione laborum quo quos omnis sed magnam id ducimus saepe
             </p>
-            <ul class="list-unstyled social dark-hover d-flex">
-              <li class="me-1">
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-              <li class="me-1">
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li class="me-1">
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li class="me-1">
-                <a href="#"><span class="icon-linkedin"></span></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

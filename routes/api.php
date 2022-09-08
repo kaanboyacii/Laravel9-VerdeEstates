@@ -20,9 +20,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::controller(ServiceController::class)->group(function(){
+    //service
     Route::get('/service','index');
     Route::post('/service','store');
     Route::get('/service/{id}','show');
     Route::put('/service/{id}','update');
     Route::delete('/service/{id}','destroy');
+    //appointment
+    Route::get('/appointment','index');
+    Route::get('/appointment/{id}','show');
+    Route::delete('/appointment/{id}','destroy');
 });
