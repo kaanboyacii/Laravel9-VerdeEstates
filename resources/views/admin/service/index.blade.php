@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Admin Category</title>
+  <title>Admin Services</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
   <link rel="stylesheet" href="{{asset('assets')}}/admin/vendors/base/vendor.bundle.base.css">
@@ -42,9 +42,6 @@
                             Id
                           </th>
                           <th>
-                            Category
-                          </th>
-                          <th>
                             Title
                           </th>
                           <th>
@@ -52,9 +49,6 @@
                           </th>
                           <th>
                             Image
-                          </th>
-                          <th>
-                            Image Gallery
                           </th>
                           <th>
                             Status
@@ -74,18 +68,12 @@
                         @foreach($data as $rs)
                         <tr>
                           <td>{{$rs->id}}</td>
-                          <td>{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title) }}</td>
                           <td>{{$rs->title}}</td>
                           <td>{{$rs->price}}</td>
                           <td>
                               @if ($rs->image)
                               <img src="{{Storage::url($rs->image)}}" style="height:50px ;width:50px; border-radius:2px">
                               @endif
-                          </td>
-                          <td style="text-align: center">
-                              <a href="{{route('admin.image.index',['sid'=>$rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">
-                              <img src="{{asset('assets')}}/admin/images/gallerybutton.jpg" style="height:50px ;width:50px; border-radius:2px">
-                              </a>
                           </td>
                           <td>{{$rs->status}}</td>
                           <td><a class="btn btn-primary" style="color: white;" href="{{route('admin.service.edit',['id'=>$rs->id])}}">Edit</a></td>

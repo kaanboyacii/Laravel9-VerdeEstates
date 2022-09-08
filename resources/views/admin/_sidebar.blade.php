@@ -24,33 +24,9 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="{{route('admin.category.index')}}" class="nav-link" >
-              <i class="ti-layout-list-post menu-icon"></i>
-              <span class="menu-title">Category</span>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{{route('admin.service.index')}}">
               <i class="ti-pie-chart menu-icon"></i>
               <span class="menu-title">Services</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('admin.comment.index')}}">
-              <i class="ti-comment menu-icon"></i>
-              <span class="menu-title">Comments</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('admin.message.index')}}">
-              <i class="ti-email menu-icon"></i>
-              <span class="menu-title">Messages</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('admin.faq.index')}}">
-              <i class="ti-help menu-icon"></i>
-              <span class="menu-title">FAQ</span>
             </a>
           </li>
           <li class="nav-item">

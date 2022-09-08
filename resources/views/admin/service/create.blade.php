@@ -38,24 +38,12 @@
                              <form role="form" action="{{route('admin.service.store')}}" method="POST" enctype="multipart/form-data" class="forms-sample">
                                  @csrf
                                  <div class="form-group">
-                                     <label for="">Parent Service</label>
-                                     <select name="category_id" class="form-control select2">
-                                         @foreach($data as $rs)
-                                         <option value="{{$rs->id}}"> {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title) }} </option>
-                                         @endforeach
-                                     </select>
-                                 </div>
-                                 <div class="form-group">
                                      <label for="exampleInputName1">Title</label>
                                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Title" name="title">
                                  </div>
                                  <div class="form-group">
-                                     <label for="exampleInputName1">Keywords</label>
-                                     <input type="text" class="form-control" id="exampleInputName1" placeholder="Keywords" name="keywords">
-                                 </div>
-                                 <div class="form-group">
-                                     <label for="exampleInputName1">Description</label>
-                                     <input type="text" class="form-control" id="exampleInputName1" placeholder="Description" name="description">
+                                     <label for="exampleInputName1">Address</label>
+                                     <input type="text" class="form-control" id="exampleInputName1" placeholder="Address" name="address">
                                  </div>
                                  <div class="form-group">
                                      <label for="exampleInputName1">Detail</label>

@@ -39,27 +39,8 @@
                             <form role="form" enctype="multipart/form-data" action="{{route('admin.service.update',['id'=>$data->id])}}" method="POST" class="forms-sample">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="">Parent Service</label>
-                                    <select name="category_id" class="form-control select2">
-                                        <option value="0" selected="selected"></option>
-                                        @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}" @if ($rs->id==$data->category_id) selected="selected" @endif>
-                                            {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title) }}
-                                        </option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="form-group">
                                     <label for="exampleInputName1">Title</label>
                                     <input type="text" class="form-control" id="exampleInputName1" placeholder="Title" name="title" value="{{$data->title}}">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputName1">Keywords</label>
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Keywords" name="keywords" value="{{$data->keywords}}">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputName1">Description</label>
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Description" name="description" value="{{$data->description}}">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputName1">Detail</label>
@@ -78,6 +59,10 @@
                                     </script>
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="exampleInputName1">Address</label>
+                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Address" name="address" value="{{$data->address}}">
+                                </div>
                                 <div class="form-group">
                                     <label for="exampleInputName1">Price</label>
                                     <input type="number" class="form-control" id="exampleInputName1" placeholder="Price" name="price" value="{{$data->price}}">

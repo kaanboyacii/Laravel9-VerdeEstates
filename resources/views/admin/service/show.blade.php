@@ -42,22 +42,12 @@
                           <td>{{$data->id}}</td>
                       </tr>
                       <tr>
-                          <th style="width: 30px">Category</th>
-                          <td>
-                              {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data->category, $data->category->title) }}
-                          </td>
-                      </tr>
-                      <tr>
                           <th style="width: 30px">Title</th>
                           <td>{{$data->title}}</td>
                       </tr>
                       <tr>
-                          <th style="width: 30px">Keywords</th>
-                          <td>{{$data->keywords}}</td>
-                      </tr>
-                      <tr>
-                          <th style="width: 30px">Description</th>
-                          <td>{{$data->description}}</td>
+                          <th style="width: 30px">Address</th>
+                          <td>{{$data->address}}</td>
                       </tr>
                       <tr>
                           <th style="width: 30px">Detail</th>

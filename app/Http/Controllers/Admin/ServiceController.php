@@ -45,9 +45,8 @@ class serviceController extends Controller
         $data=new service();
         $data->user_id = $request->user_id;
         $data->title = $request->title;
-        $data->keywords = $request->keywords;
-        $data->description = $request->description;
         $data->detail = $request->detail;
+        $data->address = $request->address;
         $data->price = $request->price;
         $data->status = $request->status;
         if($request->file('image')){
@@ -96,12 +95,10 @@ class serviceController extends Controller
     public function update(Request $request, service $service,$id)
     {
         $data=service::find($id);
-        $data->category_id = $request->category_id;
         $data->user_id = $request->user_id;
         $data->title = $request->title;
-        $data->keywords = $request->keywords;
-        $data->description = $request->description;
         $data->detail = $request->detail;
+        $data->address = $request->address;
         $data->price = $request->price;
         $data->status = $request->status;
         if($request->file('image')){

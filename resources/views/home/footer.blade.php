@@ -24,6 +24,7 @@
             <div class="widget">
               <h3>Links</h3>
               <ul class="list-unstyled links">
+                <li><a href="{{route('home')}}">Home</a></li>
                 <li><a href="{{route('services')}}">Properties</a></li>
                 <li><a href="{{route('about')}}">About us</a></li>
                 <li><a href="{{route('contact')}}">Contact us</a></li>
