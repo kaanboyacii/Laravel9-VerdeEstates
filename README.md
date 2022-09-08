@@ -24,4 +24,8 @@ https://www.youtube.com/watch?v=9vlQwsTh-OM
 
 9-Run "php artisan migrate" Laravel Migrations.
 
+<<<<<<< HEAD
 10-It's the correct way to seeding: "php artisan db:seed --class=DatabaseSeeder" Laravel Seeding.
+=======
+10-It's the correct way to seeding: "php artisan db:seed --class=DatabaseSeeder" Laravel Seeding.
+>>>>>>> 1ff1dc1044712b64865a8c46ee32df4eb6e0697b
