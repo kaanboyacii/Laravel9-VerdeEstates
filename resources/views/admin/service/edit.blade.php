@@ -65,7 +65,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputName1">Price</label>
-                                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Price" name="price" value="{{$data->price}}">
+                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Price" name="price" value="{{$data->price}}">
                                 </div>
                                 <div class="form-group">
                                     <label>File upload</label>

@@ -20,11 +20,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $sliderdata = Service::limit(6)->get();
         $servicelist1 = Service::limit(9)->get();
         $setting = Setting::first();
         return view('home.index', [
-            'sliderdata' => $sliderdata,
             'servicelist1' => $servicelist1,
             'setting'=>$setting,
         ]);
