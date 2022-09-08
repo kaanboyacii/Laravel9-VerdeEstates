@@ -4,12 +4,11 @@
           <div class="col-lg-4">
             <div class="widget">
               <h3>Contact</h3>
-              <address>Verde Estates ENGLAND 43 Raymouth Rd. Baltemoer, London 3910</address>
+              <address>{{$setting->adress}}</address>
               <ul class="list-unstyled links">
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="tel://11234567890">{{$setting->phone}}</a></li>
                 <li>
-                  <a href="mailto:info@mydomain.com">info@verdeestates.com</a>
+                  <a href="mailto:info@mydomain.com">{{$setting->email}}</a>
                 </li>
               </ul>
             </div>
@@ -32,13 +31,13 @@
 
               <ul class="list-unstyled social">
                 <li>
-                  <a href="https://www.instagram.com/"><span class="icon-instagram"></span></a>
+                  <a href="{{$setting->instagram}}"><span class="icon-instagram"></span></a>
                 </li>
                 <li>
-                  <a href="https://twitter.com"><span class="icon-twitter"></span></a>
+                  <a href="{{$setting->twitter}}"><span class="icon-twitter"></span></a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/campaign"><span class="icon-facebook"></span></a>
+                  <a href="{{$setting->facebook}}"><span class="icon-facebook"></span></a>
                 </li>
               </ul>
             </div>

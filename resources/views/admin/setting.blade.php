@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin Settings</title>
-    <meta name="description" content="@yield("description")">
-    <meta name="keywords" content="@yield("keywords")">
+    <meta name="description" content="@yield(" description")">
+    <meta name="keywords" content="@yield(" keywords")">
     <meta name="author" content="Kaan Boyaci">
     <!-- plugins:css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
@@ -70,6 +70,10 @@
                                     <input type="Description" class="form-control" id="exampleInputName1" name="email" value="{{$data->email}}">
                                 </div>
                                 <div class="form-group">
+                                    <label for="exampleInputName1">Work Time</label>
+                                    <input type="Description" class="form-control" id="exampleInputName1" name="worktime" value="{{$data->worktime}}">
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleSelectGender">Status</label>
                                     <select name="status" class="form-control">
                                         <option selected>{{$data->status}}</option>
@@ -104,11 +108,11 @@
                                     <input type="text" class="form-control" id="exampleInputName1" name="facebook" value="{{$data->facebook}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputName1">Instagram</label>
+                                    <label for="exampleInputName1">İnstagram</label>
                                     <input type="text" class="form-control" id="exampleInputName1" name="instagram" value="{{$data->instagram}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputName1">Twitter</label>
+                                    <label for="inputPassword" class="">Twitter</label>
                                     <input type="text" class="form-control" id="exampleInputName1" name="twitter" value="{{$data->twitter}}">
                                 </div>
                                 <div class="form-group">

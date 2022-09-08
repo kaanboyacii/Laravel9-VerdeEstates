@@ -13,9 +13,9 @@
 
         <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
           <ol class="breadcrumb text-center justify-content-center">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
             <li class="breadcrumb-item">
-              <a href="properties.html">Properties</a>
+              <a href="{{route('services')}}">Properties</a>
             </li>
             <li class="breadcrumb-item active text-white-50" aria-current="page">
               {{$data->title}}
