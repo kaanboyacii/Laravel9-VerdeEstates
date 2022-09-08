@@ -1,10 +1,4 @@
-Homepage preview video:
 
-https://www.youtube.com/watch?v=3nAU5TuAggE&t=1s
-
-AdminPanel preview video:
-
-https://www.youtube.com/watch?v=9vlQwsTh-OM
 
 1-Setup (install/create) Database and PHP server.
 
@@ -24,8 +18,4 @@ https://www.youtube.com/watch?v=9vlQwsTh-OM
 
 9-Run "php artisan migrate" Laravel Migrations.
 
-<<<<<<< HEAD
 10-It's the correct way to seeding: "php artisan db:seed --class=DatabaseSeeder" Laravel Seeding.
-=======
-10-It's the correct way to seeding: "php artisan db:seed --class=DatabaseSeeder" Laravel Seeding.
->>>>>>> 1ff1dc1044712b64865a8c46ee32df4eb6e0697b
