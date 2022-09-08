@@ -42,16 +42,8 @@
                             <td>{{$data->service->title}} - {{$data->service_id}}</td>
                         </tr>
                         <tr>
-                            <th style="width: 30px">Worker id</th>
-                            <td>{{$data->worker_id}}</td>
-                        </tr>
-                        <tr>
                             <th style="width: 30px">Date & Time</th>
                             <td>{{$data->date}}, {{$data->time}}</td>
-                        </tr>
-                        <tr>
-                            <th style="width: 30px">Price & Payment</th>
-                            <td>{{$data->price}}$, {{$data->payment}}</td>
                         </tr>
                         <tr>
                             <th style="width: 30px">IP</th>

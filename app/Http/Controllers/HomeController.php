@@ -60,13 +60,13 @@ class HomeController extends Controller
     public function storeappointment(Request $request)
     {
         $data = New Appointment();
-        $data->user_id = Auth::id();
         $data->service_id = $request->input('service_id');
-        $data->worker_id = Auth::id();
+        $data->name = $request->input('name');
+        $data->email = $request->input('email');
+        $data->phone = $request->input('phone');
+        $data->address = $request->input('address');
         $data->date = $request->input('date');
         $data->time = $request->input('time');
-        $data->price = $request->input('price');
-        $data->payment = $request->input('payment');
         $data->note = $request->input('note');
         $data->status = $request->input('status');
         $data->IP = request()->IP();

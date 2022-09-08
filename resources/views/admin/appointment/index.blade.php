@@ -42,19 +42,10 @@
                                                 Id
                                             </th>
                                             <th>
-                                                User
-                                            </th>
-                                            <th>
                                                 Service & Service id
                                             </th>
                                             <th>
-                                                Worker id
-                                            </th>
-                                            <th>
                                                 Date & Time
-                                            </th>
-                                            <th>
-                                                Price & Payment
                                             </th>
                                             <th>
                                                 Status
@@ -71,11 +62,8 @@
                                         @foreach($data as $rs)
                                         <tr>
                                             <td>{{$rs->id}}</td>
-                                            <td><a href="{{route('admin.user.show',['id'=>$rs->user_id])}}"onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">{{$rs->user->name}}</a></td>
                                             <td>{{$rs->service->title}} - {{$rs->service_id}}</td>
-                                            <td>{{$rs->worker_id}}</td>
                                             <td>{{$rs->date}}, {{$rs->time}}</td>
-                                            <td>{{$rs->price}}$, {{$rs->payment}}</td>
                                             <td>{{$rs->status}}</td>
                                             <td>
                                                 <a href="{{route('admin.appointment.show',['id'=>$rs->id])}}" class="btn btn-block btn-warning btn-sm" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">Show</a>

@@ -30,7 +30,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-Route::post('/storeappointment', [HomeController::class, 'storeappointment'])->name('storeappointment');
 
 Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('admin_logincheck');
@@ -39,7 +38,7 @@ Route::get('/admin/logout', [HomeController::class, 'logout'])->name('admin_logo
 
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/service/{id}', [HomeController::class, 'service'])->name('service');
-Route::get('/categoryservices/{id}', [HomeController::class, 'categoryservices'])->name('categoryservices');
+Route::post('/storeappointment', [HomeController::class, 'storeappointment'])->name('storeappointment');
 
 
 //ADMIN PANEL ROUTES
