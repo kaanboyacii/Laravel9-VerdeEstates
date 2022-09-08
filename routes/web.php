@@ -44,6 +44,7 @@ Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('a
 Route::get('/admin/logout', [HomeController::class, 'logout'])->name('admin_logout');
 
 
+Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/service/{id}', [HomeController::class, 'service'])->name('service');
 Route::get('/categoryservices/{id}', [HomeController::class, 'categoryservices'])->name('categoryservices');
 
