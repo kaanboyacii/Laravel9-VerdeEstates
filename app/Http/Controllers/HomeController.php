@@ -75,13 +75,19 @@ class HomeController extends Controller
         $data->save();
         return redirect()->route('service',['id'=>$request->input('service_id')])->with('success','Your appointment has been completed, Thank You');
     }
+    public function services()
+    {
+        $data = Service::all();
+        return view('home.services', [
+            'data' => $data,
+        ]);
+    }
     public function service($id)
     {
         $data = Service::find($id);
-        $images = DB::table('images')->where('service_id',$id)->get();
+        // $images = DB::table('images')->where('service_id',$id)->get();
         return view('home.service', [
             'data' => $data,
-            'images' => $images,
         ]);
     }
     public function aboutus()
