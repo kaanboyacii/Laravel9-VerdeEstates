@@ -47,12 +47,6 @@
                             Email
                           </th>
                           <th>
-                            Role
-                          </th>
-                          <th>
-                            Show
-                          </th>
-                          <th>
                             Delete
                           </th>
                         </tr>
@@ -63,14 +57,6 @@
                           <td>{{$rs->id}}</td>
                           <td>{{$rs->name}}</td>
                           <td>{{$rs->email}}</td>
-                          <td>
-                              @foreach($rs->roles as $role)
-                                  {{$role->name}}
-                              @endforeach
-                          </td>
-                          <td>
-                                <a href="{{route('admin.user.show',['id'=>$rs->id])}}" class="btn btn-block btn-warning btn-sm"onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">Show</a>
-                           </td>
                           <td><a  class="btn btn-danger" style="color: white;" href="{{route('admin.user.destroy',['id'=>$rs->id])}}", onclick="return confirm('Delete Are You Sure ?')">Delete</a></td>
                         </tr>
                         @endforeach

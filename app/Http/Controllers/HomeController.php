@@ -72,10 +72,6 @@ class HomeController extends Controller
             'data' => $data,
         ]);
     }
-    public function aboutus()
-    {
-        return view(view: 'home.about');
-    }
     public function login()
     {
         return view(view: 'admin.login');

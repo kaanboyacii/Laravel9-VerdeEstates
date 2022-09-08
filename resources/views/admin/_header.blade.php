@@ -23,7 +23,7 @@
               </a>
               @auth
               <!-- <a href="{{route('admin_login')}}" class="dropdown-item"> -->
-              <a href="/logoutuser" class="dropdown-item">
+              <a href="" class="dropdown-item">
                 <i class="ti-user text-primary"></i>
                 {{Auth::user()->name}}
               </a>
